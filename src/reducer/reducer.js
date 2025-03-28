@@ -5,7 +5,7 @@ const reducer = (state, action) => {
     case "dataReceived":
       return {
         ...state,
-        questions: action.payload,
+        questions: action.payload.questions,
         status: "ready",
       };
     case "dataFailed":
